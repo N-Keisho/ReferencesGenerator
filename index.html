@@ -10,19 +10,30 @@
     <h1>参考文献ジェネレータ</h1>
     <p>SIST02スタイルの参考文献リストを生成するツールです。</p>
     </p>
-    <div>
-        <h2>著者名</h2>
-        <input type="text" id="author" placeholder="著者名">
-        <h2>ページ名</h2>
-        <input type="text" id="title" placeholder="ページ名">
-        <h2>サイト名</h2>
-        <input type="text" id="site" placeholder="サイト名">
-        <h2>更新日付</h2>
-        <input type="text" id="date" placeholder="更新日付">
-        <h2>URL</h2>
-        <input type="text" id="url" placeholder="URL">
-        <h2>アクセス日</h2>
-        <input type="text" id="access" placeholder="アクセス日">
+    <div class="container">
+        <div id="references" class="references">
+            <div id="reference1" class="reference">
+                <h2>参考文献1</h2>
+                <h3>著者名</h3>
+                <input type="text" class="author" placeholder="著者名" onchange="generate()">
+                <h3>ページ名</h3>
+                <input type="text" class="page" placeholder="ページ名" onchange="generate()">
+                <h3>サイト名</h3>
+                <input type="text" class="site" placeholder="サイト名" onchange="generate()">
+                <h3>更新日付</h3>
+                <input type="date" class="update" placeholder="更新日付" onchange="generate()">
+                <h3>URL</h3>
+                <input type="url" class="url" placeholder="URL" onchange="generate()">
+                <h3>アクセス日</h3>
+                <input type="date" class="access" placeholder="アクセス日" onchange="generate()">
+            </div>
+        </div>
+        <div class="result">
+            <textarea id="output" class="output"></textarea>
+            <button onclick="copy()">コピー</button>
+            <button onclick="addReference()">追加</button>
+            <button onclick="deleteReference()">削除</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
