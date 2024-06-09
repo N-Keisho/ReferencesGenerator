@@ -4,7 +4,7 @@ function generate(){
     var count = 1;
     for(var j = 0; j < reference.length; j++){
         const inputs = reference[j].getElementsByTagName('input');
-        output += "[" + count + "]";
+        output += "[" + count + "] ";
         for (var i = 0; i < inputs.length; i++){
             if (inputs[i].value !== ""){
                 if (inputs[i].className === "page"){
