@@ -24,7 +24,7 @@ function generate(){
         output += "\n";
         count++;
     }
-    document.getElementById('output').innerHTML = output;   
+    document.getElementById('output').value = output;   
 }
 
 function addReference(){

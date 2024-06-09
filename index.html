@@ -10,7 +10,8 @@
     <div class="container">
         <h1>参考文献ジェネレーター</h1>
         <p>SIST02スタイルの参考文献リストを生成するツールです.</p>
-        <p>各項目を入力してください.</p>
+        <p>必要情報を入力すると，リアルタイムで右の出力ゾーンに生成されていきます．</p>
+        <p>「追加」で参考文献の追加，「削除」で最後の参考文献の削除，「コピー」で生成物をコピーできます．</p>
         <div class="flex">
             <div id="references" class="references">
                 <div id="reference1" class="reference">
@@ -33,7 +34,7 @@
                 <button onclick="addReference()">追加</button>
                 <button onclick="deleteReference()">削除</button>
                 <button onclick="copy()">コピー</button>
-                <textarea id="output" class="output"></textarea>
+                <textarea id="output" class="output" readonly></textarea>
             </div>
         </div>
     </div>
