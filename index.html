@@ -7,32 +7,33 @@
     <meta locale="ja">
 </head>
 <body>
-    <h1>参考文献ジェネレータ</h1>
-    <p>SIST02スタイルの参考文献リストを生成するツールです。</p>
-    </p>
     <div class="container">
-        <div id="references" class="references">
-            <div id="reference1" class="reference">
-                <h2>参考文献1</h2>
-                <h3>著者名</h3>
-                <input type="text" class="author" placeholder="著者名" onchange="generate()">
-                <h3>ページ名</h3>
-                <input type="text" class="page" placeholder="ページ名" onchange="generate()">
-                <h3>サイト名</h3>
-                <input type="text" class="site" placeholder="サイト名" onchange="generate()">
-                <h3>更新日付</h3>
-                <input type="date" class="update" placeholder="更新日付" onchange="generate()">
-                <h3>URL</h3>
-                <input type="url" class="url" placeholder="URL" onchange="generate()">
-                <h3>アクセス日</h3>
-                <input type="date" class="access" placeholder="アクセス日" onchange="generate()">
+        <h1>参考文献ジェネレータ</h1>
+        <p>SIST02スタイルの参考文献リストを生成するツールです。</p>
+        <div class="flex">
+            <div id="references" class="references">
+                <div id="reference1" class="reference">
+                    <h2>参考文献1</h2>
+                    <h3>著者名</h3>
+                    <input type="text" class="author" placeholder="著者名" onchange="generate()">
+                    <h3>ページ名</h3>
+                    <input type="text" class="page" placeholder="ページ名" onchange="generate()">
+                    <h3>サイト名</h3>
+                    <input type="text" class="site" placeholder="サイト名" onchange="generate()">
+                    <h3>更新日付</h3>
+                    <input type="date" class="update" placeholder="更新日付" onchange="generate()">
+                    <h3>URL</h3>
+                    <input type="url" class="url" placeholder="URL" onchange="generate()">
+                    <h3>アクセス日</h3>
+                    <input type="date" class="access" placeholder="アクセス日" onchange="generate()">
+                </div>
             </div>
-        </div>
-        <div class="result">
-            <textarea id="output" class="output"></textarea>
-            <button onclick="copy()">コピー</button>
-            <button onclick="addReference()">追加</button>
-            <button onclick="deleteReference()">削除</button>
+            <div class="result">
+                <textarea id="output" class="output"></textarea>
+                <button onclick="copy()">コピー</button>
+                <button onclick="addReference()">追加</button>
+                <button onclick="deleteReference()">削除</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
